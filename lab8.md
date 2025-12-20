@@ -19,7 +19,7 @@
 
 ### Шаг 1: Включение WSL через PowerShell
 
-Запустил PowerShell с правами администратора (`Win+X` → `Windows PowerShell (Администратор)`)
+Запустила PowerShell с правами администратора (`Win+X` → `Windows PowerShell (Администратор)`)
 
 ```powershell
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
@@ -29,7 +29,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 
 ### Шаг 2: Включение платформы виртуальных машин
 
-Для поддержки WSL 2 выполнил команду:
+Для поддержки WSL 2 выполнила команду:
 
 ```powershell
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
@@ -39,20 +39,20 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 ### Шаг 3: Перезагрузка системы
 
-После выполнения команд выполнил перезагрузку компьютера для применения изменений.
+После выполнения команд выполнила перезагрузку компьютера для применения изменений.
 
 ### Шаг 4: Установка ядра Linux
 
-Скачал и установил пакет обновления ядра Linux для WSL 2 с официального сайта Microsoft.
+Скачала и установила пакет обновления ядра Linux для WSL 2 с официального сайта Microsoft.
 
 ### Шаг 5: Установка дистрибутива
 
-Установил **Ubuntu 22.04 LTS** из Microsoft Store:
+Установила **Ubuntu 22.04 LTS** из Microsoft Store:
 
-1. Открыл Microsoft Store
-2. Нашел "Ubuntu 22.04 LTS"
-3. Нажал "Установить"
-4. После установки запустил и создал пользователя
+1. Открыла Microsoft Store
+2. Нашела "Ubuntu 22.04 LTS"
+3. Нажала "Установить"
+4. После установки запустила и создала пользователя
 
 ```bash
 # Создание пользователя
@@ -94,7 +94,6 @@ mkdir ~/LabWork
 ls -la ~
 ```
 
-![Создание директории](screenshots/lab8_mkdir.png)
 
 ### Шаг 2: Переход в созданную директорию
 
